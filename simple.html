@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>css selectors examples</title>
+<!--Internal css to demonstrate various selectors-->
+<style>
+/*Element Selectior*/
+p{
+	color:blue;
+	font-size:18px;
+}
+?*ID selector*/
+#unique-element{
+	background-color:lightgray;
+	padding:10px
+}
+?*class selector*/
+.highlight{
+	color:red;
+	font-weight:bold;
+}
+/*group selector*/
+h1,h2,h3{
+	color:green;
+}
+/*Universal selector*/
+*{
+	margin:10px;
+	padding:5px;
+
+}
+</style>
+</head>
+<body>
+<!--Element selector example-->
+<p>This paragraph is styled using an element selector</p>
+<!--ID selector example-->
+<div id="unique-element">This div is styled using an ID selector.</div>
+<1--class selector example-->
+<span class="highlight">This text is styled using class selector.</span>
+<!Group selector example-->
+<h1>This is heading 1 styled using a  group selector.</h1>
+<h2>This is heading 2 styled using a  group selector.</h2>
+<h3>This is heading 3 styled using a  group selector.</h3>
+<!--Universal selector example-->
+<p>all elements have margin and padding set by the universal selector.</p>
+<div>All elements have margin and padding set by the universal selector.</div>
+</body>
+</html>
