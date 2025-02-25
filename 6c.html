@@ -1,0 +1,42 @@
+<html>
+<body>
+<from id="myForm">
+<input type="text"id="myInput"/>
+<button type="submit">Submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
+ script1.js:
+ //Method 1:using prompt()function
+ let name=prompt("What is your name?");
+ document.writeIn("Hello,"+name+"!");
+ //method 2:Using confirm()function
+ let response=confirm("Are you sure?");
+ if(response){
+ document.writeIn("you clicked ok!");
+ }else{
+ document.writenIn("you clicked cancel! ");
+ }
+ //method3:using HTML form javascript
+ let form=document.getElementsById("myForm");
+ let inputFiled=document.getElementsById("myInput");
+ form.addEventListener("submit",function(event)){
+ event.prerventDefault();
+ let inputValue=inputField.value;
+ document.writeIn("you entered:"+inputValue);
+ });
+ //method 4:Using JavScript readline()function(Node.js)
+ const readline=require("reradline");
+ const r1=readline.createInterface({
+ input:process.stdin,
+ output:process.stdout
+ });
+ r1.question("What is your name?",function(answer)){
+ console.log("Hello,"+answer+"!");
+ r1.close();
+ });
+ 1.prompt()function:Displays a pop-up prompt box that asks the user for input.
+ 2.confirm()function:Displays a pop-up confirmation box that asks the user to confirm or cancel.
+ 3.HTML form and JavaScript:Uses an HTMl form to collect user input and JavaScript to process the input
+ 4.readline()function (Node.js):uses the readlines module in  Node.js to read uder input from console.
