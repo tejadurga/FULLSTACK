@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Window Object Properties and Methods</title> 
+</head> 
+<body> 
+<h1 id="heading">Window Object Properties and Methods</h1> 
+<button onclick="openWindow()">Open Window</button> 
+<button onclick="closeWindow()">Close Window</button> 
+<button onclick="moveWindow()">Move Window</button> 
+<button onclick="resizeWindow()">Resize Window</button> 
+<button onclick="alertMessage()">Alert Message</button> 
+<button onclick="confirmMessage()">Confirm Message</button> 
+<button onclick="promptMessage()">Prompt Message</button> 
+<script src="7b.js"></script> 
+</body>  </html> 
+
+} 
+// Function to display a prompt message 
+function promptMessage() { 
+let name = window.prompt("What is your name?"); 
+if (name) { 
+console.log("Hello, " + name + "!"); 
+} else { 
+console.log("You did not enter your name."); 
+}  }
